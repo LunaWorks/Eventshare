@@ -1,0 +1,7 @@
+<script>
+$(document).ready(function(){
+    $("login").submit(function(){
+        alert("Üdvözlet az oldalon!");
+    });
+});
+</script>

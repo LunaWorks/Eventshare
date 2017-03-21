@@ -1,0 +1,28 @@
+<?php
+$lol = null;
+function registerUser($name,$username,$password,$age){
+ //Ha form lefut, illesze be az adatokat az adatbázisba.
+ $servername = "localhost";
+ $username = "root";
+ $password = "";
+ $dbname = "sharebase";
+
+ $conn = new mysqli($servername, $username, $password, $dbname);
+ $sql = "INSERT INTO users (name, username, password, age)
+            VALUES ('$name', '$username', '".md5($password)."', '$age')";
+    $lol = $conn->query($sql);
+ return ($lol === TRUE);
+ }
+ if (isset($_POST['name']) && !empty(trim($_POST['name']))
+		&& isset($_POST['username']) && !empty(trim($_POST['username']))
+		&& isset($_POST['password']) && !empty(trim($_POST['password']))
+    && isset($_POST['age']) && !empty(trim($_POST['age'])))  {
+
+		if (registerUser($_POST['name'],$_POST['username'],$_POST['password'],$_POST['age'])) {
+			echo 'Fiok letrehozva, <a href="index.php">jelentkezz be</a>.';
+		} else {
+			echo 'Valami hiba tortent, probald ujra!';
+		}
+	}
+
+?>

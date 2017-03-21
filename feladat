@@ -1,0 +1,11 @@
+
+********************************************* FELADATOK ************************************************************************
+0. tech dolog: HTML külön legyen PHP-tól, INCLUDE()!! , csak PHP kód legyen a valami.php , függvényekre bontás = max 15 sor
+    nem olyan bonyolult füöggvények                                                                                            *[x]
+1. KInézet szépítése                                                                                                           *[ ]
+2. User Role-ok                                                                                                                *[x]
+3. Listázás(userek)                                                                                                            *[x]
+4. Admin tudja 0-ra és 1-re tenni az aktív usert                                                                               *[x]
+5. Adatok jól látszódjanak pld nevek                                                                                           *[x]
+6. kisebb hibák...                                                                                                             *[x]
+********************************************* FELADATOK ************************************************************************
