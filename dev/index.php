@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php include("main/log-reg.php"); ?>
 <!DOCTYPE html>
 <html>
@@ -8,6 +9,6 @@
 	<body>
 		<?php include("main/header.php"); ?>
 		<?php include("main/main.php"); ?>
-		<?php include("main/footer.php"); ?>	
+		<?php include("main/footer.php"); ?>
 	</body>
 </html>
